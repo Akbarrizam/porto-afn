@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import { AnimatePresence, motion } from 'framer-motion';
 import BootScreen from './components/BootScreen';
 import CursorFollower from './components/CursorFollower';
@@ -15,6 +15,26 @@ import Footer from './components/Footer';
 
 export default function App() {
   const [bootCompleted, setBootCompleted] = useState(false);
+  const [theme, setTheme] = useState(() => {
+    const saved = localStorage.getItem('cyber_theme');
+    return saved || 'dark';
+  });
+
+  useEffect(() => {
+    const root = document.documentElement;
+    if (theme === 'light') {
+      root.classList.add('light');
+      root.classList.remove('dark');
+    } else {
+      root.classList.add('dark');
+      root.classList.remove('light');
+    }
+    localStorage.setItem('cyber_theme', theme);
+  }, [theme]);
+
+  const toggleTheme = () => {
+    setTheme((prev) => (prev === 'dark' ? 'light' : 'dark'));
+  };
 
   return (
     <div className="relative min-h-screen bg-[#0a0a0f] text-[#e5e5e5] font-space selection:bg-[#00fff2] selection:text-[#0a0a0f]">
@@ -38,7 +58,7 @@ export default function App() {
           <ScrollProgress />
 
           {/* Header Navigation */}
-          <Navbar />
+          <Navbar theme={theme} onToggleTheme={toggleTheme} />
 
           {/* Main Sections */}
           <main className="relative z-10">

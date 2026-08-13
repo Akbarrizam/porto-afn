@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
-import { FiMenu, FiX, FiTerminal, FiVolume2, FiVolumeX, FiCode } from 'react-icons/fi';
+import { FiMenu, FiX, FiTerminal, FiVolume2, FiVolumeX, FiSun, FiMoon } from 'react-icons/fi';
 import CyberButton from './CyberButton';
 import { playCyberSound } from '../utils/cyberSound';
 
@@ -12,7 +12,7 @@ const navLinks = [
   { name: 'CONTACT', href: '#contact' },
 ];
 
-export default function Navbar() {
+export default function Navbar({ theme = 'dark', onToggleTheme }) {
   const [scrolled, setScrolled] = useState(false);
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
   const [soundEnabled, setSoundEnabled] = useState(false);
@@ -51,6 +51,15 @@ export default function Navbar() {
       playCyberSound('toggleOn', true);
     } else {
       playCyberSound('toggleOff', true);
+    }
+  };
+
+  const handleThemeSwitch = () => {
+    if (onToggleTheme) {
+      onToggleTheme();
+      if (soundEnabled) {
+        playCyberSound(theme === 'dark' ? 'toggleOn' : 'toggleOff', true);
+      }
     }
   };
 
@@ -96,7 +105,26 @@ export default function Navbar() {
         </nav>
 
         {/* Action Controls */}
-        <div className="hidden md:flex items-center gap-4">
+        <div className="hidden md:flex items-center gap-3">
+          {/* Theme Toggle Button */}
+          <button
+            onClick={handleThemeSwitch}
+            className="p-2 border border-slate-800 bg-slate-900/60 text-slate-400 hover:text-[#00fff2] hover:border-[#00fff2]/40 transition-all font-mono text-xs flex items-center gap-1.5 cursor-pointer"
+            title={theme === 'dark' ? "Switch to Light Mode" : "Switch to Dark Mode"}
+          >
+            {theme === 'dark' ? (
+              <>
+                <FiSun className="text-[#ffe600] animate-spin-slow text-sm" />
+                <span className="text-[10px] text-slate-300">LIGHT</span>
+              </>
+            ) : (
+              <>
+                <FiMoon className="text-[#9d00ff] text-sm" />
+                <span className="text-[10px] text-slate-700 font-bold">DARK</span>
+              </>
+            )}
+          </button>
+
           {/* Sound Toggle */}
           <button
             onClick={toggleSound}
@@ -117,8 +145,15 @@ export default function Navbar() {
           </button>
         </div>
 
-        {/* Mobile Hamburger Toggle */}
-        <div className="md:hidden flex items-center gap-3">
+        {/* Mobile Hamburger Toggle & Controls */}
+        <div className="md:hidden flex items-center gap-2">
+          <button
+            onClick={handleThemeSwitch}
+            className="p-2 text-lg border border-[#00fff2]/40 bg-[#0d0d14] text-slate-300"
+            title="Toggle Theme"
+          >
+            {theme === 'dark' ? <FiSun className="text-[#ffe600]" /> : <FiMoon className="text-[#9d00ff]" />}
+          </button>
           <button
             onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
             className="p-2 text-2xl text-[#00fff2] border border-[#00fff2]/40 bg-[#0d0d14]"
@@ -149,6 +184,17 @@ export default function Navbar() {
                   <span className="text-[#ff00e5]">&gt;&gt;</span>
                 </a>
               ))}
+
+              <div className="flex items-center justify-between pt-2">
+                <span className="text-xs text-slate-400">THEME_MODE</span>
+                <button
+                  onClick={handleThemeSwitch}
+                  className="px-3 py-1 border border-slate-700 bg-slate-900 text-xs text-[#00fff2] flex items-center gap-1.5"
+                >
+                  {theme === 'dark' ? <FiSun className="text-[#ffe600]" /> : <FiMoon className="text-[#9d00ff]" />}
+                  <span>{theme === 'dark' ? 'LIGHT MODE' : 'DARK MODE'}</span>
+                </button>
+              </div>
             </div>
           </motion.div>
         )}

@@ -122,7 +122,7 @@ export const experienceData = [
   {
     period: "2026",
     role: "Vektor – Corporate Fleet & Asset Protection Portal | Freelance Frontend / Web Developer",
-    location: "Trenggalek, Indonesia",
+    location: "Indonesia",
     description: "Developed a high-value B2B web portal dedicated to corporate fleet and asset insurance management. Utilizing React and Tailwind CSS, I built an intuitive, responsive interface focused on simplifying complex workflows for corporate clients. The platform's core functionalities include a real-time premium estimation calculator and an automated Request for Proposal (RFP) generation pipeline, directly addressing critical business needs by accelerating the proposal process and improving the overall client experience.",
     achievements: [
       "Built a B2B corporate fleet and asset insurance management portal using React and Tailwind CSS.",
@@ -134,7 +134,7 @@ export const experienceData = [
   {
     period: "2024 - 2025",
     role: "WorkSync – Enterprise Task & Activity Management Suite | Freelance Fullstack Developer",
-    location: "Trenggalek, Indonesia",
+    location: "Indonesia",
     description: "Engineered a comprehensive, full-stack task management platform tailored for enterprise-scale operations. Built from the ground up using React 19 and TypeScript, the system features a dynamic Kanban board and advanced workload telemetry to visualize team capacity. By implementing highly scalable state management and a robust architectural structure, the platform successfully streamlines complex daily operations, enhances resource allocation, and significantly improves cross-functional team collaboration.",
     achievements: [
       "Designed and developed an enterprise-grade daily task management platform utilizing TypeScript and React 19.",
@@ -147,7 +147,7 @@ export const experienceData = [
     period: "2023 - 2024",
     role: "Mobile Web Developer (Internship)",
     company: "Government Institution",
-    location: "Trenggalek, Indonesia",
+    location: "Indonesia",
     description: "Designed, developed, and deployed web & mobile attendance services for government staff, incorporating real-time GPS tracking, photo verification, and automated leave submission workflows.",
     achievements: [
       "Engineered daily attendance system featuring real-time GPS geolocation and camera photo capture validation",

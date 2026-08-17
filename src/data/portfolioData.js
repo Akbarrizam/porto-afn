@@ -24,10 +24,9 @@ export const personalInfo = {
     }
   },
   socialLinks: {
-    github: "https://github.com",
+    github: "https://github.com/Arfansft1",
     linkedin: "https://linkedin.com",
-    twitter: "https://twitter.com",
-    email: "usabar304@gmail.com",
+    email: "arfansafut1@gmail.com",
     discord: "arfan_cyber#0001",
     telegram: "https://t.me/arfan_cyber"
   }
@@ -39,9 +38,9 @@ export const techStackData = [
     icon: "SiReact",
     color: "#00fff2", // neon cyan
     skills: [
-      { name: "React 19", level: 95, icon: "SiReact", desc: "Hooks, Fiber, Server Components, Custom Hooks" },
+      { name: "React 19", level: 80, icon: "SiReact", desc: "Hooks, Fiber, Server Components, Custom Hooks" },
       { name: "JavaScript / TypeScript", level: 92, icon: "SiTypescript", desc: "ESNext, Async/Await, Strict Types, Generics" },
-      { name: "Next.js", level: 88, icon: "SiNextdotjs", desc: "App Router, SSR, ISR, Edge API Routes" },
+      { name: "Next.js", level: 79, icon: "SiNextdotjs", desc: "App Router, SSR, ISR, Edge API Routes" },
       { name: "Tailwind CSS", level: 96, icon: "SiTailwindcss", desc: "Custom themes, Design Tokens, Glow FX, Utilities" },
       { name: "Framer Motion", level: 90, icon: "SiFramer", desc: "Scroll animations, Layout transitions, Gesture control" },
       { name: "HTML5 & CSS3", level: 98, icon: "SiHtml5", desc: "Semantic tags, Grid, Flexbox, Canvas & SVG Animation" }
@@ -53,10 +52,7 @@ export const techStackData = [
     color: "#ff00e5", // neon magenta
     skills: [
       { name: "Node.js & Express", level: 90, icon: "SiNodedotjs", desc: "RESTful APIs, Middleware, WebSockets, JWT Auth" },
-      { name: "Python & Fast API", level: 78, icon: "SiPython", desc: "Async microservices, Data parsing, AI script integration" },
-      { name: "PostgreSQL & Prisma", level: 79, icon: "SiPostgresql", desc: "Relational schemas, ORM modeling, Query optimization" },
-      { name: "MongoDB & Redis", level: 80, icon: "SiMongodb", desc: "NoSQL document store, Caching, Session store" },
-      { name: "Docker & CI/CD", level: 75, icon: "SiDocker", desc: "Containerization, GitHub Actions, Automated deployments" }
+      { name: "Python & Fast API", level: 75, icon: "SiPython", desc: "Async microservices, Data parsing, AI script integration" },
     ]
   },
   {
@@ -65,9 +61,8 @@ export const techStackData = [
     color: "#9d00ff", // electric purple
     skills: [
       { name: "Git & GitHub", level: 89, icon: "SiGithub", desc: "Branching strategies, PR reviews, Actions automation" },
-      { name: "Vite & Webpack", level: 83, icon: "SiVite", desc: "HMR, Build optimization, Bundling strategies" },
-      { name: "Figma to Code", level: 84, icon: "SiFigma", desc: "Design systems, UI prototyping, Component specs" },
-      { name: "Postman & Insomnia", level: 82, icon: "SiPostman", desc: "API testing, Mock servers, Automated collections" },
+      { name: "Vite & Webpack", level: 78, icon: "SiVite", desc: "HMR, Build optimization, Bundling strategies" },
+      { name: "Figma to Code", level: 80, icon: "SiFigma", desc: "Design systems, UI prototyping, Component specs" },
       { name: "VS Code / Antigravity", level: 95, icon: "FiCode", desc: "Custom cyber themes, Keybindings, Copilot workflows" }
     ]
   }

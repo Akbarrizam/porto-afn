@@ -120,17 +120,16 @@ export const projectsData = [
 
 export const experienceData = [
   {
-    period: "2023 - 2024",
-    role: "Mobile Web Developer (Internship)",
-    company: "Government Institution",
+    period: "2026",
+    role: "Vektor – Corporate Fleet & Asset Protection Portal | Freelance Frontend / Web Developer",
     location: "Trenggalek, Indonesia",
-    description: "Designed, developed, and deployed web & mobile attendance services for government staff, incorporating real-time GPS tracking, photo verification, and automated leave submission workflows.",
+    description: "Developed a high-value B2B web portal dedicated to corporate fleet and asset insurance management. Utilizing React and Tailwind CSS, I built an intuitive, responsive interface focused on simplifying complex workflows for corporate clients. The platform's core functionalities include a real-time premium estimation calculator and an automated Request for Proposal (RFP) generation pipeline, directly addressing critical business needs by accelerating the proposal process and improving the overall client experience.",
     achievements: [
-      "Engineered daily attendance system featuring real-time GPS geolocation and camera photo capture validation",
-      "Developed integrated digital employee leave request module, replacing manual paper-based approval processes",
-      "Significantly enhanced administrative operational efficiency and attendance monitoring accuracy for government staff"
+      "Built a B2B corporate fleet and asset insurance management portal using React and Tailwind CSS.",
+      "Developed a real-time insurance premium estimation calculator and a streamlined workflow for Request for Proposal (RFP) generation.",
+      "Designed an intuitive and responsive UI/UX focused on seamless navigation and accessibility for corporate clients."
     ],
-    skills: ["Mobile Web", "GPS Geolocation", "Camera API", "JavaScript", "RESTful API", "UI/UX Design"]
+    skills: ["React", "Tailwind CSS", "B2B Web Portal", "RFP Automation", "Premium Calculator Engine", "Responsive UI/UX", "Fleet Telemetry"]
   },
   {
     period: "2024 - 2025",
@@ -145,17 +144,18 @@ export const experienceData = [
     skills: ["React 19", "TypeScript", "Kanban Board", "State Management", "Workload Telemetry", "Tailwind CSS", "Enterprise Architecture"]
   },
   {
-    period: "2025 - 2026",
-    role: "Vektor – Corporate Fleet & Asset Protection Portal | Freelance Frontend / Web Developer",
+    period: "2023 - 2024",
+    role: "Mobile Web Developer (Internship)",
+    company: "Government Institution",
     location: "Trenggalek, Indonesia",
-    description: "Developed a high-value B2B web portal dedicated to corporate fleet and asset insurance management. Utilizing React and Tailwind CSS, I built an intuitive, responsive interface focused on simplifying complex workflows for corporate clients. The platform's core functionalities include a real-time premium estimation calculator and an automated Request for Proposal (RFP) generation pipeline, directly addressing critical business needs by accelerating the proposal process and improving the overall client experience.",
+    description: "Designed, developed, and deployed web & mobile attendance services for government staff, incorporating real-time GPS tracking, photo verification, and automated leave submission workflows.",
     achievements: [
-      "Built a B2B corporate fleet and asset insurance management portal using React and Tailwind CSS.",
-      "Developed a real-time insurance premium estimation calculator and a streamlined workflow for Request for Proposal (RFP) generation.",
-      "Designed an intuitive and responsive UI/UX focused on seamless navigation and accessibility for corporate clients."
+      "Engineered daily attendance system featuring real-time GPS geolocation and camera photo capture validation",
+      "Developed integrated digital employee leave request module, replacing manual paper-based approval processes",
+      "Significantly enhanced administrative operational efficiency and attendance monitoring accuracy for government staff"
     ],
-    skills: ["React", "Tailwind CSS", "B2B Web Portal", "RFP Automation", "Premium Calculator Engine", "Responsive UI/UX", "Fleet Telemetry"]
-  }
+    skills: ["Mobile Web", "GPS Geolocation", "Camera API", "JavaScript", "RESTful API", "UI/UX Design"]
+  },
 ];
 
 export const terminalCommandsHelp = [

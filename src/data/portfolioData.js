@@ -19,8 +19,8 @@ export const personalInfo = {
     stats: {
       experienceYears: 1,
       projectsCompleted: 15,
-      commitsThisYear: 123,
-      caffeineEfficiency: "74.8%"
+      commitsThisYear: 50,
+      caffeineEfficiency: "88.6"
     }
   },
   socialLinks: {
@@ -53,10 +53,10 @@ export const techStackData = [
     color: "#ff00e5", // neon magenta
     skills: [
       { name: "Node.js & Express", level: 90, icon: "SiNodedotjs", desc: "RESTful APIs, Middleware, WebSockets, JWT Auth" },
-      { name: "Python & Fast API", level: 85, icon: "SiPython", desc: "Async microservices, Data parsing, AI script integration" },
-      { name: "PostgreSQL & Prisma", level: 86, icon: "SiPostgresql", desc: "Relational schemas, ORM modeling, Query optimization" },
-      { name: "MongoDB & Redis", level: 84, icon: "SiMongodb", desc: "NoSQL document store, Caching, Session store" },
-      { name: "Docker & CI/CD", level: 80, icon: "SiDocker", desc: "Containerization, GitHub Actions, Automated deployments" }
+      { name: "Python & Fast API", level: 78, icon: "SiPython", desc: "Async microservices, Data parsing, AI script integration" },
+      { name: "PostgreSQL & Prisma", level: 79, icon: "SiPostgresql", desc: "Relational schemas, ORM modeling, Query optimization" },
+      { name: "MongoDB & Redis", level: 80, icon: "SiMongodb", desc: "NoSQL document store, Caching, Session store" },
+      { name: "Docker & CI/CD", level: 75, icon: "SiDocker", desc: "Containerization, GitHub Actions, Automated deployments" }
     ]
   },
   {
@@ -64,11 +64,11 @@ export const techStackData = [
     icon: "SiGit",
     color: "#9d00ff", // electric purple
     skills: [
-      { name: "Git & GitHub", level: 94, icon: "SiGithub", desc: "Branching strategies, PR reviews, Actions automation" },
-      { name: "Vite & Webpack", level: 92, icon: "SiVite", desc: "HMR, Build optimization, Bundling strategies" },
-      { name: "Figma to Code", level: 90, icon: "SiFigma", desc: "Design systems, UI prototyping, Component specs" },
-      { name: "Postman & Insomnia", level: 95, icon: "SiPostman", desc: "API testing, Mock servers, Automated collections" },
-      { name: "VS Code / Cursor", level: 98, icon: "FiCode", desc: "Custom cyber themes, Keybindings, Copilot workflows" }
+      { name: "Git & GitHub", level: 89, icon: "SiGithub", desc: "Branching strategies, PR reviews, Actions automation" },
+      { name: "Vite & Webpack", level: 83, icon: "SiVite", desc: "HMR, Build optimization, Bundling strategies" },
+      { name: "Figma to Code", level: 84, icon: "SiFigma", desc: "Design systems, UI prototyping, Component specs" },
+      { name: "Postman & Insomnia", level: 82, icon: "SiPostman", desc: "API testing, Mock servers, Automated collections" },
+      { name: "VS Code / Antigravity", level: 95, icon: "FiCode", desc: "Custom cyber themes, Keybindings, Copilot workflows" }
     ]
   }
 ];
@@ -131,6 +131,30 @@ export const experienceData = [
       "Significantly enhanced administrative operational efficiency and attendance monitoring accuracy for government staff"
     ],
     skills: ["Mobile Web", "GPS Geolocation", "Camera API", "JavaScript", "RESTful API", "UI/UX Design"]
+  },
+  {
+    period: "2024 - 2025",
+    role: "WorkSync – Enterprise Task & Activity Management Suite | Freelance Fullstack Developer",
+    location: "Trenggalek, Indonesia",
+    description: "Engineered a comprehensive, full-stack task management platform tailored for enterprise-scale operations. Built from the ground up using React 19 and TypeScript, the system features a dynamic Kanban board and advanced workload telemetry to visualize team capacity. By implementing highly scalable state management and a robust architectural structure, the platform successfully streamlines complex daily operations, enhances resource allocation, and significantly improves cross-functional team collaboration.",
+    achievements: [
+      "Designed and developed an enterprise-grade daily task management platform utilizing TypeScript and React 19.",
+      "Developed interactive interfaces featuring a dynamic Kanban Board and workload telemetry visualization to optimize team collaboration and efficiency.",
+      "Implemented robust state management and a scalable architectural structure to meet enterprise-level internal system requirements."
+    ],
+    skills: ["React 19", "TypeScript", "Kanban Board", "State Management", "Workload Telemetry", "Tailwind CSS", "Enterprise Architecture"]
+  },
+  {
+    period: "2025 - 2026",
+    role: "Vektor – Corporate Fleet & Asset Protection Portal | Freelance Frontend / Web Developer",
+    location: "Trenggalek, Indonesia",
+    description: "Developed a high-value B2B web portal dedicated to corporate fleet and asset insurance management. Utilizing React and Tailwind CSS, I built an intuitive, responsive interface focused on simplifying complex workflows for corporate clients. The platform's core functionalities include a real-time premium estimation calculator and an automated Request for Proposal (RFP) generation pipeline, directly addressing critical business needs by accelerating the proposal process and improving the overall client experience.",
+    achievements: [
+      "Built a B2B corporate fleet and asset insurance management portal using React and Tailwind CSS.",
+      "Developed a real-time insurance premium estimation calculator and a streamlined workflow for Request for Proposal (RFP) generation.",
+      "Designed an intuitive and responsive UI/UX focused on seamless navigation and accessibility for corporate clients."
+    ],
+    skills: ["React", "Tailwind CSS", "B2B Web Portal", "RFP Automation", "Premium Calculator Engine", "Responsive UI/UX", "Fleet Telemetry"]
   }
 ];
 

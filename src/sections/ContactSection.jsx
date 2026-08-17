@@ -43,7 +43,7 @@ export default function ContactSection() {
       setTerminalLogs((prev) => [
         ...prev,
         "STATUS 200: TRANSMISSION DELIVERED SUCCESSFULLY!",
-        "Thank you! Arfan Akbar will get back to you shortly."
+        "Thank you! Arfan Safut P will get back to you shortly."
       ]);
 
       // Trigger Cyber Neon Confetti Burst
